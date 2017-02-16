@@ -1,0 +1,503 @@
+*{
+  font-family: Tahoma;
+
+}
+html
+{
+  height : 100%;
+  background-color: #1A1D26;
+}
+
+/*header{
+    background-image: url(images/image_site_1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
+}*/
+
+body{
+  min-height : 100%;
+  margin: auto;
+  width: 70%;
+  background-color: white;
+  border-radius : 20px;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  margin-top: 60px;
+} 
+
+textarea{
+  resize : none;
+  width: 49.5%;
+}
+
+.titre{
+  background-color: #046380;
+  padding: 40px;
+  text-align: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: white;
+}
+
+header img{
+  position: fixed;
+  width: 70%;
+  height: auto;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+}
+
+nav a{
+  padding: 5px 20px 5px 20px;
+  border-radius : 20px;
+  color: black;
+  text-decoration:none;
+  transition: all 0.2s;
+}
+
+.sous-titre{
+  text-decoration: underline;
+}
+
+nav a:hover{
+  padding: 5px 20px 5px 20px;
+  border-radius : 20px;
+  background-color: #046380;
+  text-decoration:none;
+  transition: all 0.2s;
+}
+
+nav a:hover{
+  color: white;
+}
+
+nav{
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.contenu{
+  padding-left: 8%;
+  padding-right: 8%;
+  border-top: solid #1A1D26 2px;
+}
+
+input, select, textarea{
+    color: white;
+    background-color: #046380;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+input:read-only{
+  background-color: #757575;
+}
+
+.erreur{
+  padding: 10px;
+  background-color: #FED5D5;
+  color: #C44C51;
+  border-radius: 5px;
+  border: solid #C44C51 1px;
+  margin-top: 20px;
+}
+
+.succes{
+  padding: 10px;
+  background-color: #C0FFB0;
+  color: #96CA2D;
+  border-radius: 5px;
+  border: solid #96CA2D 1px;  
+  margin-top: 20px;
+}
+
+#formRecherche input{
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+#Recherche{
+	display: flex;
+}
+
+#formRecherche input[type=text]{
+	margin: 8px 0;
+  width: 70%;
+}
+#formRecherche input[type=submit]{
+  width: 29%;
+  text-align: center;
+}
+
+#addFiltre{
+  text-align: center;
+}
+
+.divRecherche{
+  position: center;
+  margin: auto;
+  width: 50%;
+}
+
+#formConnexion input{
+  padding: 6px 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#formConnexion input[type=submit]{
+  padding: 6px 10px;
+  box-sizing: border-box;
+  width: 30%;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+#formConnexion{
+	width: 30%;
+}
+
+#formInscription input{
+  padding: 6px 10px;
+  box-sizing: border-box;
+  width: 20%;
+}
+
+label
+{
+  display: block;
+  /*width: 150px;*/
+}
+
+#formCreerResto input, select{
+  padding: 12px 20px;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+#formCreerResto input[type=submit]{
+  margin-top: 30px;
+  padding: 12px;
+  box-sizing: border-box;
+  width: 15%;
+  margin-left: 17%;
+}
+
+#formCreerResto #catPrix input{
+  width: 10%;
+}
+
+.info{
+  font-style : italic;
+  font-size : 17px;
+}
+
+#formUpdtProfil input[type=text]{
+  padding: 12px 10px;
+  box-sizing: border-box;
+  width: 50%;
+  border-radius: 3px;
+}
+
+#formUpdtProfil input[type=submit]{
+  padding: 12px;
+  width: 15%;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-left: 17%;
+}
+
+
+#formInscription input[type=text]{
+  padding: 12px 10px;
+  box-sizing: border-box;
+  width: 50%;
+  border-radius: 3px;
+}
+
+#formInscription input[type=password]{
+  padding: 12px 10px;
+  box-sizing: border-box;
+  width: 50%;
+  border-radius: 3px;
+}
+
+#formInscription input[type=submit]{
+  padding: 12px;
+  width: 15%;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-left: 17%;
+}
+
+.divResultat a{
+  color: black;
+  text-decoration:none;
+}
+
+.unResto{
+  border-top: solid black 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+}
+.unResto:hover{
+  background-color: #046380;;
+  color:white;
+}
+
+#formAvis input[type=number], #noteMax{
+  text-align: right;
+  font-size: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 0px;
+}
+#formAvis input[type=number]{
+  width: 40px;
+}
+#formAvis input[type=text]{
+  width: 95%;
+  padding :4px 10px 4px 10px;
+}
+#formAvis input[type=submit]{
+  width: 20%;
+  margin-left: 200px;
+  padding:4px 10px 4px 10px;
+  margin-top: 10px;
+}
+
+#formAvis textarea{
+  width: 100%;
+  height: 100px;
+  background-color: #046380;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+
+#title{
+  font-size: 18px;
+  text-align: center;
+}
+
+#formAvis label{
+  padding-bottom: 2px;
+}
+
+#formAvis{
+  background-color: #E0E0E0;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 2px;
+  padding-bottom: 20px;
+  border-radius:3px;
+  width: 50%;
+  margin:auto;
+}
+
+.detailsRest{
+  width: 90%;
+  margin: auto;
+}
+
+#addFiltre:hover{
+  color: #046380; 
+}
+
+#filtre select{
+  width: 100%;
+}
+
+#filtre{
+  margin-bottom: 5px;
+}
+
+#triPrix{
+  padding-top: 20px;
+  border-top: solid #1A1D26 2px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#triPrix input[type=submit]{
+  margin-left: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 80%;
+  transition: all 0.5s;
+}
+
+#formRecherche input[type=submit]:hover{
+  background-color: #757575;
+  transition: all 0.5s;
+}
+
+#headerAvis{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#triDate{
+  display: flex;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+#triDate input[type=submit]{
+  margin-left: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+  transition: all 0.5s;
+}
+
+#triDate input[type=submit]:hover{
+  background-color: #757575;
+  transition: all 0.5s;
+}
+
+#triLangue{
+  display: flex;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+#triLangue input[type=submit]{
+  margin-left: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+  transition: all 0.5s;
+}
+
+#triLangue input[type=submit]:hover{
+  background-color: #757575;
+  transition: all 0.5s;
+}
+
+#unFav{
+  display: flex;
+}
+#unFav form{
+  margin-left: 10px; 
+}
+
+
+.infoAvis{
+  color: #046380;
+  font-weight: bold;
+}
+
+.unAvis{
+  border-top: solid black 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.unAvis:hover{
+  background-color: #F3F2F2;
+}
+
+#optDetail{
+  border-radius: 3px;
+  text-align: center;
+  background-color: #1A1D26;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  margin: 25px;
+}
+
+#optDetail span{
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.select{
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #046380;
+  border-top: solid white 10px;
+  border-bottom: solid white 10px;
+}
+
+.hidden{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+.detailAvis{
+	font-size : 14px;
+}
+.detailAvis:hover{
+	color :#046380;
+}
+
+.nbAvis{
+	color :#046380;
+	font-weight: bold;
+}
+
+#occuped{
+  background-color: red;
+  opacity: 0.7;
+}
+
+#lastBadge{
+  color: #046380;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+#infoProfil,#avisProfil{
+  margin-left: 20px;
+}
+
+#questionAvis{
+  color: #046380;
+  font-weight: bold; 
+}
+
+.reponseAvis{
+  border: solid #046380 1px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.reponseAvis .rep{
+  color: #046380;
+  font-style: italic;
+}
+
+#badgeProfil img{
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+	margin-left: 40px;
+}
+
+#badgeProfil ul{
+	list-style-type: none; 
+}
